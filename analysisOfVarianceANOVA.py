@@ -18,5 +18,5 @@ print("========================")
 print(stats.f_oneway(dfData['libido'][dfData['dose'] == 'high'],
                      dfData['libido'][dfData['dose'] == 'low'],
                      dfData['libido'][dfData['dose'] == 'placebo']))
-aov_table = sm.stats.anova_lm(results, typ=2)
+aov_table = sm.stats.anova_lm(result, typ=2)
 print(aov_table)
